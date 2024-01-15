@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: rgb(255, 255, 255);
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	background-color: black;
+}
+
+main {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.row {
+	margin: 10px;
+	height: 10vh;
+	/* background-color: red; */
+	border: 2px solid white;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.row h1 {
+	font-size: 6vw;
+	font-weight: 900;
+	color: white;
+	position: relative;
+	z-index: 100;
+	/* mix-blend-mode: difference; */
+}
+
+.row img {
+	height: 18vh;
+	width: 18vh;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	transform: translateX(-50%);
+	transition: all linear 0.5s;
+	opacity: 0;
+}
